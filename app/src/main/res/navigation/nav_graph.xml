@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chooserFragment">
+
+    <fragment
+        android:id="@+id/chooserFragment"
+        android:name="nz.ac.uclive.dsi61.navtest.ChooserFragment"
+        android:label="fragment_chooser"
+        tools:layout="@layout/fragment_chooser" >
+        <action
+            android:id="@+id/action_chooserFragment_to_choice1Fragment"
+            app:destination="@id/choice1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_chooserFragment_to_choice2Fragment"
+            app:destination="@id/choice2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/choice1Fragment"
+        android:name="nz.ac.uclive.dsi61.navtest.Choice1Fragment"
+        android:label="fragment_choice1"
+        tools:layout="@layout/fragment_choice1" />
+    <fragment
+        android:id="@+id/choice2Fragment"
+        android:name="nz.ac.uclive.dsi61.navtest.Choice2Fragment"
+        android:label="fragment_choice2"
+        tools:layout="@layout/fragment_choice2" />
+</navigation>

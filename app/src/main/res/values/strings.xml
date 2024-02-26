@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NavTest</string>
+    <string name="choice1_fragment_text">You chose path 1.</string>
+    <string name="choice2_fragment_text">You chose path 2.</string>
+</resources>
